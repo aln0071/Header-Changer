@@ -1,0 +1,17 @@
+{
+    "name": "Header Changer",
+    "version": "1.0",
+    "description": "Header changer",
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+	"content_scripts": [
+		{
+			"matches": ["*://*/*"],
+			"js": ["changeHeader.js"]
+		}
+	],
+	"browser_action": {},
+    "manifest_version": 2
+  }
