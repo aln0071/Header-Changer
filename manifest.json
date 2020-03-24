@@ -1,17 +1,29 @@
 {
-    "name": "Header Changer",
-    "version": "1.0",
-    "description": "Header changer",
-    "background": {
-      "scripts": ["background.js"],
-      "persistent": false
-    },
-	"content_scripts": [
-		{
-			"matches": ["*://*/*"],
-			"js": ["changeHeader.js"]
-		}
-	],
-	"browser_action": {},
-    "manifest_version": 2
-  }
+  "name": "Header Changer",
+  "version": "1.0",
+  "description": "Header changer",
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "changeHeader.js"
+      ]
+    }
+  ],
+  "permissions": ["<all_urls>",
+    "storage",
+    "tabs"
+],
+  "browser_action": {
+    "default_popup": "popup/popup.html"
+  },
+  "manifest_version": 2
+}
