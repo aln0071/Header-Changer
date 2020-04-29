@@ -13,7 +13,7 @@
             /* width: 100%; */
             padding: 7px 10px;
             margin: 8px 0;
-            display: inline-block;
+            display: block;
             border: 1px solid #ccc;
             border-radius: 4px;
             box-sizing: border-box;
@@ -23,6 +23,17 @@
             color: #f8f9fa;
             font-size: medium;
             font-weight: 700;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        p {
+            color: #f8f9fa;
+            font-size: small;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        span {
+            white-space: nowrap;
         }
     </style>
 </head>
@@ -30,6 +41,15 @@
 <body>
     <label for="title">Page Title</label>
     <input type="text" id="title" />
+    <label for="icon">Page Icon</label>
+    <img id="icon" src="" width="20" height="20" />
+    <input type="text" id="icon-text" />
+    <p>
+        <span>Right click and copy above</span>
+        text to copy page icon. 
+        Replace it with any icon 
+        url to change page icon.
+    </p>
 </body>
 
 </html>
